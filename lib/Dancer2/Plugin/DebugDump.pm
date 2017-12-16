@@ -1,5 +1,4 @@
-package Dancer2::Plugin::DebugDump 0.1;
-
+package Dancer2::Plugin::DebugDump 0.2;
 use strict;
 use warnings;
 
@@ -7,7 +6,6 @@ use Dancer2::Plugin;
 use Data::Dumper qw(Dumper);
 
 plugin_keywords 'ddump';
-
 
 sub ddump {
   my ($s, @data) = @_;
@@ -24,26 +22,23 @@ sub ddump {
 
 }
 
-
 1; # Magic true value required at end of module
 __END__
 
 =head1 NAME
 
-Dancer2::Plugin::DebugDump - [Run debug through Dumper for easier reading]
+Dancer2::Plugin::DebugDump - Run debug through Dumper for output that's easier on the eyes.
 
 
 =head1 VERSION
 
-This document describes Dancer2::Plugin::DebugDump version 0.1
+This document describes Dancer2::Plugin::DebugDump version 0.2
 
 
 =head1 SYNOPSIS
 
 Dancer2's C<debug> keyword prints variables on a single line. This plugin runs variables through C<Data::Dumper> first for output that is easier to read.
 
-
-=for author to fill in:
     use Dancer2;
     use Dancer2::Plugin::DebugDump;
 
@@ -71,7 +66,7 @@ This simple module provides the keyword C<ddump> used to make debug output easie
 
 =head1 KEYWORDS
 
-== ddump()
+    ddump()
 
 Send debug output through Dumper.
 
@@ -83,8 +78,7 @@ DebugDump requires no configuration files or environment variables.
 
 =head1 DEPENDENCIES
 
-=for author to fill in:
-    Data::Dumper;
+    L<Data::Dumper>;
 
 
 =head1 INCOMPATIBILITIES
@@ -101,6 +95,10 @@ No bugs have been reported.
 Please report any bugs or feature requests to
 C<s@dondley.com>, or through the web interface at
 L<http://rt.cpan.org>.
+
+=head1 SEE ALSO
+
+L<Data::Dumper> man page.
 
 
 =head1 AUTHOR
