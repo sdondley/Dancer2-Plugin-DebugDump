@@ -101,6 +101,10 @@ L<http://rt.cpan.org>.
 
 L<Data::Dumper> man page.
 
+=head1 DEVELOPMENT
+
+Source code is available at L<GitHub|https://github.com/sdondley/Dancer2-Plugin-DebugDump>. Contributions are welcome.
+
 
 =head1 AUTHOR
 
