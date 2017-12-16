@@ -1,4 +1,4 @@
-package Dancer2::Plugin::DebugDump 0.22;
+package Dancer2::Plugin::DebugDump ; # space after semi intentional
 use strict;
 use warnings;
 
