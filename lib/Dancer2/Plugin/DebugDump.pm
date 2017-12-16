@@ -1,4 +1,4 @@
-package Dancer2::Plugin::DebugDump 0.21;
+package Dancer2::Plugin::DebugDump 0.22;
 use strict;
 use warnings;
 
