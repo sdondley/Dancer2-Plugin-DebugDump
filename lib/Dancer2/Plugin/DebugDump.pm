@@ -1,4 +1,4 @@
-package Dancer2::Plugin::DebugDump 0.2;
+package Dancer2::Plugin::DebugDump 0.21;
 use strict;
 use warnings;
 
@@ -27,25 +27,25 @@ __END__
 
 =head1 NAME
 
-Dancer2::Plugin::DebugDump - Run debug through Dumper for output that's easier on the eyes.
+Dancer2::Plugin::DebugDump - Modifies debug behavior to create multi-line output that's easier for mere mortals to parse.
 
 
 =head1 VERSION
 
-This document describes Dancer2::Plugin::DebugDump version 0.2
+This document describes Dancer2::Plugin::DebugDump version 0.21
 
 
 =head1 SYNOPSIS
 
-Dancer2's C<debug> keyword prints variables on a single line. This plugin runs variables through C<Data::Dumper> first for output that is easier to read.
+By default, Dancer2's C<debug> keyword outputs data structures to a single line. This plugin runs variables through C<Data::Dumper> to produce output that is easier to read.
 
     use Dancer2;
     use Dancer2::Plugin::DebugDump;
 
+    my $data_stucture = [ { 'key1' => 'value', 'key2' => 'value' }, { 'key1' => 'value' , 'key2' => 'value' } ];
     ddump($data_structure);
-    ddump($data_struture1, $data_structure2, ... );
 
-    # Sample output
+    # Sample output to your log or console
     DEBUG DUMP:
     $VAR1 = [
               {
@@ -58,17 +58,18 @@ Dancer2's C<debug> keyword prints variables on a single line. This plugin runs v
               },
             ];
 
+    # Accepts multiple arguments
+    ddump($data_structure1, $data_structure2, ...);
 
-=head1 DESCRIPTION
-
-This simple module provides the keyword C<ddump> used to make debug output easier to read.
+    # Derefrencing scalars is handled automatically for you
+    ddump(%data_structure); # This works
 
 
 =head1 KEYWORDS
 
-    ddump()
+=head2 ddump()
 
-Send debug output through Dumper.
+Accepts list of scalars and references which are processed through Dumper before getting sent to Dancer2's built-in C<debug> keyword. See Synopsis for usaage.
 
 
 =head1 CONFIGURATION
@@ -78,7 +79,7 @@ DebugDump requires no configuration files or environment variables.
 
 =head1 DEPENDENCIES
 
-    L<Data::Dumper>;
+L<Data::Dumper>;
 
 
 =head1 INCOMPATIBILITIES
