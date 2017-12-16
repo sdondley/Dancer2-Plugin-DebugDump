@@ -1,4 +1,4 @@
-# Dancer2::Plugin-DebugDump version 0.01
+# Dancer2::Plugin::DebugDump version 0.1
 
 DebugDump is designed to make it easier to read the output of variables while debugging Dancer2 web apps. Enable
 this module like you would any other Dancer2 plugin.
