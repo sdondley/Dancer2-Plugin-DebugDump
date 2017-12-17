@@ -1,4 +1,4 @@
-package Dancer2::Plugin::DebugDump ; # space after semi intentional
+package Dancer2::Plugin::DebugDump ;
 use strict;
 use warnings;
 
@@ -11,15 +11,9 @@ sub ddump {
   my ($s, @data) = @_;
   my $output = '';
   foreach my $content (@data) {
-    if (!ref $content) {
-      $content = Dumper $content;
-    } elsif (ref $content) {
-      $content = Dumper $content;
-    }
-    $output .= $content;
+    $output .= Dumper $content;
   }
   $s->dsl->debug("DEBUG DUMP:\n" . $output . "\n");
-
 }
 
 1; # Magic true value required at end of module
@@ -28,11 +22,6 @@ __END__
 =head1 NAME
 
 Dancer2::Plugin::DebugDump - Modifies debug behavior to create multi-line output that's easier for mere mortals to parse.
-
-
-=head1 VERSION
-
-This document describes Dancer2::Plugin::DebugDump version 0.21
 
 
 =head1 SYNOPSIS
@@ -58,16 +47,12 @@ By default, Dancer2's C<debug> keyword outputs data structures to a single line.
               },
             ];
 
-    # Accepts multiple arguments
-    ddump($data_structure1, $data_structure2, ...);
-
-    # Derefrencing scalars is handled automatically for you
-    ddump(%data_structure); # This works
-
+    # Accepts multiple arguments, each argument should be a scalar or a reference
+    ddump($data_structure, $scalar_var, \@array_var, \%hash_var, ... );
 
 =head1 KEYWORDS
 
-=head2 ddump()
+=head2 ddump
 
 Accepts list of scalars and references which are processed through Dumper before getting sent to Dancer2's built-in C<debug> keyword. See Synopsis for usaage.
 

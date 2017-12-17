@@ -2,10 +2,6 @@
 
 Dancer2::Plugin::DebugDump - Modifies debug behavior to create multi-line output that's easier for mere mortals to parse.
 
-# VERSION
-
-This document describes Dancer2::Plugin::DebugDump version 0.21
-
 # SYNOPSIS
 
 By default, Dancer2's `debug` keyword outputs data structures to a single line. This plugin runs variables through `Data::Dumper` to produce output that is easier to read.
@@ -29,15 +25,12 @@ By default, Dancer2's `debug` keyword outputs data structures to a single line. 
               },
             ];
 
-    # Accepts multiple arguments
-    ddump($data_structure1, $data_structure2, ...);
-
-    # Derefrencing scalars is handled automatically for you
-    ddump(%data_structure); # This works
+    # Accepts multiple arguments, each argument should be a scalar or a reference
+    ddump($data_structure, $scalar_var, \@array_var, \%hash_var, ... );
 
 # KEYWORDS
 
-## ddump()
+## ddump
 
 Accepts list of scalars and references which are processed through Dumper before getting sent to Dancer2's built-in `debug` keyword. See Synopsis for usaage.
 
