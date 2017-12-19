@@ -1,81 +1,31 @@
-# NAME
+# Overview
 
-Dancer2::Plugin::DebugDump - Modifies debug behavior to create multi-line output that's easier for mere mortals to parse.
+[Dancer2::Plugin::DebugDump](http://search.cpan.org/perldoc?Dancer2%3A%3APlugin%3A%3ADebugDump), a software module written in the Perl programming language, is a simple plugin for the [Dancer2](http://perldancer.org/) web application framework. It's purpose is to make debug output in the log files or console easier to discern by formatting it across several lines. The target audience for this software is Dancer2 developers that use Dancer2's C<debug> keyword during software development.
 
-# SYNOPSIS
+# Motivation
 
-By default, Dancer2's `debug` keyword outputs data structures to a single line. This plugin runs variables through `Data::Dumper` to produce output that is easier to read.
+I'm new to Dancer2 development and wrote this plugin to scratch a minor itch and to learn how to write a basic Dancer2 module. It's also my first CPAN module.
 
-    use Dancer2;
-    use Dancer2::Plugin::DebugDump;
+# Documentation
 
-    my $data_stucture = [ { 'key1' => 'value', 'key2' => 'value' }, { 'key1' => 'value' , 'key2' => 'value' } ];
-    ddump($data_structure);
+Visit the [module's home page on CPAN](http://search.cpan.org/perldoc?Dancer2%3A%3APlugin%3A%3ADebugDump) for more complete documentation.
 
-    # Sample output to your log or console
-    DEBUG DUMP:
-    $VAR1 = [
-              {
-                'key1' => 'value',
-                'key2' => 'value'
-              },
-              {
-                'key1' => 'value',
-                'key2' => 'value',
-              },
-            ];
+# Development Notes
 
-    # Accepts multiple arguments, each argument should be a scalar or a reference
-    ddump($data_structure, $scalar_var, \@array_var, \%hash_var, ... );
+This software is actively maintained. Further releases are expected to help exercise my budding software development skills. Feedback, suggestions, and contributions are greatly appreciated and welcome.
 
-# KEYWORDS
+I'm ignorant as to whether there is a better way to solve this problem than with a plugin. If there is a simpler, more elegant solution, I'm happy to hear it and will deprecate this module.
 
-## ddump
+# Bug Reports
 
-Accepts list of scalars and references which are processed through Dumper before getting sent to Dancer2's built-in `debug` keyword. See Synopsis for usaage.
+Don't hesitate to post any bugs found to the [GitHub issue queue](https://github.com/sdondley/Dancer2-Plugin-DebugDump/issues). I will do my best to get them addressed.
 
-# CONFIGURATION
-
-DebugDump requires no configuration files or environment variables.
-
-# DEPENDENCIES
-
-[Data::Dumper](https://metacpan.org/pod/Data::Dumper);
-
-# INCOMPATIBILITIES
-
-None reported.
-
-# BUGS AND LIMITATIONS
-
-Uses default Data::Dumper settings. Changing these via configuration file may come in a future release.
-
-No bugs have been reported.
-
-Please report any bugs or feature requests to
-`s@dondley.com`, or through the web interface at
-[http://rt.cpan.org](http://rt.cpan.org).
-
-# SEE ALSO
-
-[Data::Dumper](https://metacpan.org/pod/Data::Dumper) man page.
-
-# DEVELOPMENT
-
-Source code is available at [GitHub](https://github.com/sdondley/Dancer2-Plugin-DebugDump). Contributions are welcome.
-
-# AUTHOR
-
-Steve Dondley  `<s@dondley.com>`
-
-# LICENCE AND COPYRIGHT
+# Impressive-sounding Boilerplate
 
 Copyright (c) 2017, Steve Dondley `<s@dondley.com>`. All rights reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself. See [perlartistic](https://metacpan.org/pod/perlartistic).
-
-# DISCLAIMER OF WARRANTY
 
 BECAUSE THIS SOFTWARE IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
 FOR THE SOFTWARE, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN
