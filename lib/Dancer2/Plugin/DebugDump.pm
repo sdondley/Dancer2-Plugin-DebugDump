@@ -25,6 +25,9 @@ __END__
 
 Dancer2::Plugin::DebugDump - Modifies debug behavior to create multi-line output that's easier for mere mortals to parse.
 
+=head1 OVERVIEW
+
+[Dancer2::Plugin::DebugDump](http://search.cpan.org/perldoc?Dancer2%3A%3APlugin%3A%3ADebugDump), a software module written in the Perl programming language, is a simple plugin for the [Dancer2](http://perldancer.org/) web application framework. The target audience for this software is Dancer2 developers that use Dancer2's `debug` keyword during software development. It's purpose is to make the `debug` output in the log files or console easier to discern by formatting it across several lines.
 
 =head1 SYNOPSIS
 
@@ -63,7 +66,6 @@ Accepts list of scalars and references which are processed through Dumper before
 
 DebugDump requires no configuration files or environment variables.
 
-
 =head1 DEPENDENCIES
 
 L<Data::Dumper>;
@@ -76,7 +78,7 @@ None reported.
 
 I'm new to Dancer2 development and wrote this plugin to scratch a minor itch and to learn how to write a basic Dancer2 module. It's also my first CPAN module.
 
-# DEVELOPMENT NOTES
+=head1 DEVELOPMENT NOTES
 
 This software is actively maintained. Further releases are expected to help exercise my budding software development skills. Feedback, suggestions, and contributions are greatly appreciated and welcome.
 
