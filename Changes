@@ -1,4 +1,4 @@
-*** Revision history for {{$dist->name}} ***
+*** Revision history for Dancer2-Plugin-DebugDump ***
 
-{{$NEXT}}
+0.33      2017-12-18 22:48:34-05:00 America/New_York
 Documentation improvements
