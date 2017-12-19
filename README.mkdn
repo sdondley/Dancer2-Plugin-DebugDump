@@ -8,7 +8,7 @@ Visit [this module's home page on CPAN](http://search.cpan.org/perldoc?Dancer2%3
 
 ## About This Repository
 
-This is the official version control repository for the project. It contains only a subset of the information provided in the [official documentation](http://search.cpan.org/perldoc?Dancer2%3A%3APlugin%3A%3ADebugDump) along and the development version of the module which you can find in the */lib* directory above. It is designed to facilitate bug reporting, feedback and contributions.
+This is the official version control repository for the project. It contains only a subset of the information provided in the [official documentation](http://search.cpan.org/perldoc?Dancer2%3A%3APlugin%3A%3ADebugDump) along with the development version of the module which can be found in the */lib* directory above. This GitHub repository  is designed to facilitate bug reporting, feedback and contributions to the module.
 
 # Motivation
 
