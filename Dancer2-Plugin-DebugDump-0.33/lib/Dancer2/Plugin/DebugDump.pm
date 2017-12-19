@@ -1,5 +1,5 @@
 package Dancer2::Plugin::DebugDump;
-
+$Dancer2::Plugin::DebugDump::VERSION = '0.33';
 use strict;
 use warnings;
 
@@ -18,13 +18,16 @@ sub ddump {
 }
 
 1; # Magic true value required at end of module
-__END__
-# ABSTRACT: Modified debug behavior to create multi-line output that's easier for mere mortals to parse.
+
+=pod
 
 =head1 NAME
 
-Dancer2::Plugin::DebugDump - Modifies debug behavior to create multi-line output that's easier for mere mortals to parse.
+Dancer2::Plugin::DebugDump - Modified debug behavior to create multi-line output that's easier for mere mortals to parse.
 
+=head1 VERSION
+
+version 0.33
 
 =head1 SYNOPSIS
 
@@ -58,11 +61,9 @@ By default, Dancer2's C<debug> keyword outputs data structures to a single line.
 
 Accepts list of scalars and references which are processed through Dumper before getting sent to Dancer2's built-in C<debug> keyword. See Synopsis for usaage.
 
-
 =head1 CONFIGURATION
 
 DebugDump requires no configuration files or environment variables.
-
 
 =head1 DEPENDENCIES
 
@@ -72,19 +73,77 @@ L<Data::Dumper>;
 
 None reported.
 
-=head1 MOTIVATION
+=for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
 
-I'm new to Dancer2 development and wrote this plugin to scratch a minor itch and to learn how to write a basic Dancer2 module. It's also my first CPAN module.
+=head1 SUPPORT
 
-# DEVELOPMENT NOTES
+=head2 Perldoc
 
-This software is actively maintained. Further releases are expected to help exercise my budding software development skills. Feedback, suggestions, and contributions are greatly appreciated and welcome.
+You can find documentation for this module with the perldoc command.
 
-I'm ignorant as to whether there is a better way to solve this problem than with a plugin. If there is a simpler, more elegant solution, I'm happy to hear it and will deprecate this module.
+  perldoc Dancer2::Plugin::DebugDump
 
-=head1 SEE ALSO
+=head2 Websites
 
-L<Data::Dumper> man page.
+The following websites have more information about this module, and may be of help to you. As always,
+in addition to those websites please use your favorite search engine to discover more resources.
+
+=over 4
+
+=item *
+
+MetaCPAN
+
+A modern, open-source CPAN search engine, useful to view POD in HTML format.
+
+L<https://metacpan.org/release/Dancer2-Plugin-DebugDump>
+
+=back
+
+=head2 Bugs / Feature Requests
+
+Please report any bugs or feature requests by email to C<bug-dancer2-plugin-debugdump at rt.cpan.org>, or through
+the web interface at L<https://rt.cpan.org/Public/Bug/Report.html?Queue=Dancer2-Plugin-DebugDump>. You will be automatically notified of any
+progress on the request by the system.
+
+=head2 Source Code
+
+The code is open to the world, and available for you to hack on. Please feel free to browse it and play
+with it, or whatever. If you want to contribute patches, please send me a diff or prod me to pull
+from your repository :)
+
+L<https://github.com/sdondley/Dancer2-Plugin-DebugDump>
+
+  git clone git://github.com/sdondley/Dancer2-Plugin-DebugDump.git
+
+=head1 BUGS AND LIMITATIONS
+
+You can make new bug reports, and view existing ones, through the
+web interface at L<http://github.com/sdondley/Dancer2-Plugin-DebugDump/issues>.
+
+=head1 HOMEPAGE
+
+Please visit the project's homepage at L<https://metacpan.org/release/Dancer2-Plugin-DebugDump>.
+
+=head1 SOURCE
+
+The development version is on github at L<https://github.com/sdondley/Dancer2-Plugin-DebugDump>
+and may be cloned from L<git://github.com/sdondley/Dancer2-Plugin-DebugDump.git>
+
+=head1 INSTALLATION
+
+See perlmodinstall for information and options on installing Perl modules.
+
+=head1 AUTHOR
+
+Steve Dondley <s@dondley.com>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2017 by Steve Dondley.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =head1 DISCLAIMER OF WARRANTY
 
@@ -108,4 +167,9 @@ RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A
 FAILURE OF THE SOFTWARE TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
 SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
 SUCH DAMAGES.
+
+=cut
+
+__END__
+# ABSTRACT: Modified debug behavior to create multi-line output that's easier for mere mortals to parse.
 
