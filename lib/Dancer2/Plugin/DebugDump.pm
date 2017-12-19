@@ -61,7 +61,6 @@ By default, Dancer2's C<debug> keyword outputs data structures to a single line.
 
 Accepts list of scalars and references which are processed through Dumper before getting sent to Dancer2's built-in C<debug> keyword. See Synopsis for usaage.
 
-
 =head1 CONFIGURATION
 
 DebugDump requires no configuration files or environment variables.
@@ -87,6 +86,8 @@ I'm ignorant as to whether there is a better way to solve this problem than with
 =head1 SEE ALSO
 
 L<Data::Dumper> man page.
+L<Dancer2> man page.
+L<Dancer2::Plugin> man page.
 
 =head1 DISCLAIMER OF WARRANTY
 
