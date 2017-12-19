@@ -1,6 +1,6 @@
-*** Revision history for {{$dist->name}} ***
+*** Revision history for Dancer2-Plugin-DebugDump ***
 
-{{$NEXT}}
+0.39      2017-12-19 07:48:32-05:00 America/New_York
 
 0.38      2017-12-18 23:45:48-05:00 America/New_York
 Fixed dependency error (hopefully). Added Changes file. Made doc improvements.
