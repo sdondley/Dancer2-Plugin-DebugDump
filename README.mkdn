@@ -1,14 +1,18 @@
 # Overview
 
-[Dancer2::Plugin::DebugDump](http://search.cpan.org/perldoc?Dancer2%3A%3APlugin%3A%3ADebugDump), a software module written in the Perl programming language, is a simple plugin for the [Dancer2](http://perldancer.org/) web application framework. The target audience for this software is Dancer2 developers that use Dancer2's `debug` keyword during software development. It's purpose is to make the `debug` output in the log files or console easier to discern by formatting it across several lines. 
+[Dancer2::Plugin::DebugDump](http://search.cpan.org/perldoc?Dancer2%3A%3APlugin%3A%3ADebugDump), a software module written in the Perl programming language, is a simple plugin for the [Dancer2](http://perldancer.org/) web application framework. The target audience for this software is Dancer2 developers that use Dancer2's `debug` keyword during software development. It's purpose is to make the `debug` output in the log files or console easier to discern by formatting it across several lines.
+
+## Documentation
+
+Visit [this module's home page on CPAN](http://search.cpan.org/perldoc?Dancer2%3A%3APlugin%3A%3ADebugDump) for more complete documentation.
+
+## About This Repository
+
+This is the official version control repository for the project. It contains only a subset of the information provided in the [official documentation](http://search.cpan.org/perldoc?Dancer2%3A%3APlugin%3A%3ADebugDump) along and the development version of the module which you can find in the */lib* directory above. It is designed to facilitate bug reporting, feedback and contributions.
 
 # Motivation
 
 I'm new to Dancer2 development and wrote this plugin to scratch a minor itch and to learn how to write a basic Dancer2 module. It's also my first CPAN module.
-
-# Documentation
-
-Visit the [module's home page on CPAN](http://search.cpan.org/perldoc?Dancer2%3A%3APlugin%3A%3ADebugDump) for more complete documentation.
 
 # Development Notes
 
