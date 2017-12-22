@@ -1,6 +1,6 @@
-*** Revision history for {{$dist->name}} ***
+*** Revision history for Dancer2-Plugin-DebugDump ***
 
-{{$NEXT}}
+0.40      2017-12-22 13:17:24-05:00 America/New_York
 Got rid of makrdown syntax in Perldoc
 
 0.39      2017-12-19 07:48:32-05:00 America/New_York
