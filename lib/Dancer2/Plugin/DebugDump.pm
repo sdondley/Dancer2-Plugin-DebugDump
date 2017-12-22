@@ -27,7 +27,7 @@ Dancer2::Plugin::DebugDump - Modifies debug behavior to create multi-line output
 
 =head1 OVERVIEW
 
-L<Dancer2::Plugin::DebugDump>, is a simple plugin for the [Dancer2](http://perldancer.org/) web application framework. The target audience for this software is Dancer2 developers that use Dancer2's `debug` keyword during software development. It's purpose is to make the `debug` output in the log files or console easier to discern by formatting it across several lines.
+L<Dancer2::Plugin::DebugDump>, is a simple plugin for the L<Dancer2|http://perldancer.org/> web application framework. The target audience for this software is Dancer2 developers that use Dancer2's C<debug> keyword during software development. It's purpose is to make the C<debug> output in the log files or console easier to discern by formatting it across several lines.
 
 =head1 SYNOPSIS
 
